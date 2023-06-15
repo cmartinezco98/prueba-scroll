@@ -1,0 +1,145 @@
+body {
+   font-family: 'Poppins', sans-serif !important;
+}
+h2{
+   font-weight: bold !important;
+}
+html{
+   overflow: hidden;
+   scroll-behavior: smooth;
+}
+
+header {
+   position: sticky;
+   top: 0;
+   z-index: 5000;
+}
+
+#clientes{
+   height: 100vh !important;
+}
+#loaderPage {
+   position: fixed;
+   z-index: 99999999999;
+   background: rgb(255, 255, 255);
+   left: 0px;
+   top: 0px;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.3s ease;
+}
+
+#mainMenu {
+   font-weight: bold;
+   flex: none;
+}
+
+#mainMenu>ul>li>a {
+   color: #fff;
+}
+
+
+.navbar-toggler-icon {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+   border: 0;
+}
+
+.navbar-toggler:focus {
+   box-shadow: none;
+}
+
+.splide_arrow_banners {
+   background-color: #000;
+}
+
+.splide_arrow_banners svg {
+   fill: #fff;
+}
+
+.splide_arrow_projects {
+   background-color: #fff;
+}
+
+.splide_arrow_projects svg {
+   fill: #000;
+}
+
+.splide_arrow_nosotroz {
+   background-color: #0069eb;
+}
+
+
+.splide_arrow_nosotroz svg {
+   fill: #ffff00;
+}
+
+.bg-sliders-banners {
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 90vh;
+}
+
+.img-service {
+   width: 150px;
+}
+
+.img-social-media {
+   width: 30px;
+}
+
+.splide-nosotroz img {
+   border-top-left-radius: 130px;
+   border-top-right-radius: 130px;
+   border-bottom-left-radius: 130px;
+   border-bottom-right-radius: 130px;
+}
+
+@media screen and (max-width: 991px) {
+   .bg-sliders-banners {
+      background-image: none !important;
+      height: auto;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   #mainMenu {
+      font-size: 20px;
+      justify-content: center;
+      padding-left: 3rem;
+      width: 75%;
+      flex: auto;
+   }
+
+   .brand {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+   }
+
+   .offcanvas {
+      width: 75% !important;
+   }
+
+   .offcanvas-backdrop,
+   .offcanvas.offcanvas-end {
+      top: 56px;
+   }
+
+   .img-service {
+      width: 100px;
+   }
+
+   .img-social-media {
+      width: 20px;
+   }
+  .slide-clientes img{
+   width: 150px;
+  }
+}
